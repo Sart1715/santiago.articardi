@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+     <nav>
+        <ul>
+        <a class="asian-button" href="#Acerca de mi"> <span> Acerca de mi</span> </a>
+        <a class="asian-button"  href="#Educación"> <span>Educación</span> </a>
+        <a class="asian-button" href="#PerfilesSociales"> <span> Perfiles Sociales</span> </a>          
+        <a class="asian-button" href="#Contacto"> <span> Contacto</span> </a>
+       <br>
+       </ul>
+      </nav>
+  </header> 
+      
+  <section>
+        <h1 id="Acerca de mi">Acerca de mi</h1>
+        <div class="AcercaDeMi">
+            <p>Mi nombre es Santiago Articardi y tengo 22 años. Actualmente soy estudiante de desarrollo web en Jóvenes a Programar (Plan Ceibal) y de Ingeniería Civil en Facultad de Ingeniería (UDELAR).</p>
+            <img class="imgADM" src="https://media.tutellus.com/libraries/02/11/lib/1464966708903_3.jpg?size=854x493s&ext=jpg" alt="Imagen DW">
+          </div>
+  </section>
+  <section id="Educación">
+    <div id="img"> 
+            <img class="imgHTML"  src="html5-logo.svg">
+            <img class="imgJavaScript" src="JavaScript-logo.png" width="240">
+            <img class="imgCSS"  src="css3-logo.svg">
+     </div>    
+    <div id="tablaEducación">
+    <h1>Educación</h1>
+     <table>
+        <tr class="tr">
+          <th>Título</th>
+          <th>Entidad</th>
+          <th>Promoción</th>
+        </tr>
+        <tr class="tr">
+          <td>Desarrollo web</td>
+          <td>Plan Ceibal (Jóvenes a programar)</td>
+          <td>En curso</td>
+        </tr>
+        <tr class="tr">
+          <td>Ingeniería civil</td>
+          <td>UDELAR (Facultad de Ingeniería)</td>
+          <td>En curso</td>
+        </tr>
+        <tr class="tr">
+          <td>Bachillerato científico</td>
+          <td>Colegio y Lieco J.F. Kennedy</td>
+          <td>2019</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+ 
+  <section class="PerfilesYContacto">
+      <div id="PerfilesSociales">
+            <h1>Perfiles sociales</h1>
+            <p>Puedes encontrarme en:</p>
+            <ul>
+                <li><a target="_blank" href="https://github.com/">Github</a></li>
+                <li><a target="_blank" href="https://twitter.com/">Twitter</a></li>
+                <li><a target="_blank" href="https://uy.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">Linkedin</a></li>
+            </ul>
+      </div>
+      <div id="Contacto">
+            <h1>Contacto</h1>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label type="select" id="elige un tema" name="elige un tema" required>
+                 Temática:</label>
+                  <select required>
+                    <option>--Elige un tema--</option>
+                    <option>Consulta</option>
+                    <option>Propuesta</option>
+                    <option>Reporte</option>
+                    <option>Otro</option>
+                  </select>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+      </div>
+  </section>
+</body>
+</html>
